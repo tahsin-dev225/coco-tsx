@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #130B24;
+  --foreground: #EEEAF4;
 }
 
 @theme inline {
@@ -10,12 +12,15 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --breakpoint-xsm: 360px;
+  --breakpoint-smm: 460px;
+  --breakpoint-xxl: 1350px; 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #130B24;
+    --foreground: #EEEAF4;
   }
 }
 
@@ -23,4 +28,19 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.font-tight {
+  font-family: 'Inter Tight', sans-serif;
+  
+}
+
+.recharts-default-legend ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px; /* চাইলে একটু spacing */
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
