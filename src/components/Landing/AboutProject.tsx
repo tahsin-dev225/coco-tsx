@@ -7,28 +7,28 @@ const AboutProject = () => {
       {/* LIne Image's */}
       <Image
         src={"/img/line1.png"}
-        className="lg:absolute lg:block 2xl:w-[700px] 2xl:right-[35%]! -z-10 hidden xxl:right-[38%]! xl:w-[420px] xl:h-[240px] right-[41%] xl:right-[44%] top-[80px] xl:top-[45px]"
+        className="xxl:absolute xxl:block 2xl:w-[700px]  -z-10 hidden xxl:right-[38%]! xl:w-[420px] xl:h-[240px] right-[41%] xl:right-[44%] top-[80px] xl:top-[45px] 2xl:right-[23%] 3xl:right-[32%]!"
         height={120}
         width={520}
         alt="lines"
       />
       <Image
         src={"/img/line2.png"}
-        className="lg:absolute lg:block -z-10 hidden xl:w-[230px] xl:h-[220px] right-[31%] top-[89px] xl:top-[60px]"
+        className="xxl:absolute xxl:block -z-10 hidden lg:h-[150px] xl:w-[230px] xl:h-[220px] right-[31%] 3xl:right-[28%] top-[89px] xl:top-[60px]"
         height={120}
         width={250}
         alt="lines"
       />
       <Image
         src={"/img/line3.png"}
-        className="lg:absolute lg:block 2xl:right-[11%] 2xl:h-[100px] -z-10 hidden xl:w-[200px] xl:h-[190px] right-[6.5%] rotate-[18deg] top-[110px] xl:top-[67px]"
+        className="xxl:absolute xxl:block 2xl:right-[11%] xxl:h-[130px] lg:right-[7%] 2xl:h-[100px] -z-10 hidden xl:w-[200px] xl:h-[120px] right-[6.5%] rotate-[18deg] top-[110px] xl:top-[107px]"
         height={120}
         width={200}
         alt="lines"
       />
 
       {/* Static Items */}
-      <div className="lg:mb-24">
+      <div className="xxl:mb-24">
         <h1 className=" font-bold text-3xl xxl:text-[48px] text-[#EEEAF4]">
           About Project
         </h1>
@@ -41,7 +41,7 @@ const AboutProject = () => {
         </p>
       </div>
       {/* blured div */}
-      <div className="mx-auto sm:w-max max-w-[350px] my-9 lg:my-0 lg:absolute sm:px-6 lg:block h-[85px] xl:h-[100px] overflow-hidden right-2/12 top-7 xl:-top-1 lg:rotate-[10deg] ">
+      <div className="mx-auto sm:w-max max-w-[350px] my-9 xxl:my-0 xxl:absolute sm:px-6 lg:block h-[85px] xl:h-[100px] overflow-hidden right-2/12 top-7 xl:-top-1 xxl:rotate-[10deg] ">
         {/* Absolute items */}
         <div className="relative px-2 sm:px-6 h-[85px] xl:h-[100px]  flex justify-center items-center w-full lg:px-7 py-3">
           <div className="size-10 absolute rounded-full blur-[16px] -bottom-1.5 left-8 bg-[#EF6E1E]"></div>

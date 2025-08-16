@@ -3,7 +3,7 @@ import Button from "../Ui/Button";
 
 const CTA = () => {
   return (
-    <div className="w-[95%] mb-8 md:mb-12 font-tight xl:w-[85%] md:my-12 flex justify-center items-center mx-auto rounded-2xl bg-gradient-to-r from-[#FB6419] to-[#EA831C]">
+    <div className="w-[95%] mb-8 md:mb-12 font-tight xl:w-[85%] md:my-12 md:mt-24 flex justify-center items-center mx-auto rounded-2xl bg-gradient-to-r from-[#FB6419] to-[#EA831C]">
       <div className="my-14 p-2">
         <h1 className="font-bold tracking-normal leading-[115%] xsm:max-w-[320px] sm:max-w-[380px] text-center mx-auto md:max-w-[400px] xl:max-w-[600px] text-[#EEEAF4]  mb- text-[32px] xl:text-[48px]">
           Get Started Today and Earn Big as One of the First
