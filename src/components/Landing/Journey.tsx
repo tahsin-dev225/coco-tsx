@@ -63,7 +63,7 @@ const AllPhase: phases[] = [
 
 const Journey = () => {
   return (
-    <div className="flex my-32 w-[95%] xl:w-[85%] mx-auto font-tight flex-col lg:flex-row gap-6">
+    <div className="flex my-14 sm:my-32 w-[95%] xl:w-[85%] mx-auto font-tight flex-col lg:flex-row gap-6">
       <div className="w-full ">
         <h1 className="font-bold leading-[130%] text-[#EEEAF4] lg:w-[85%] mb-8 text-[32px] xl:text-[48px]">
           The Journey Ahead: Our Roadmap to Limitless Innovation

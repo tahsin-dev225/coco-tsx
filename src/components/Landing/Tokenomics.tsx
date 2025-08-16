@@ -123,7 +123,7 @@ const Tokenomics = () => {
           <Pie
             data={data}
             cx="50%"
-            cy={isMobile ? "40%" : "50%"}
+            cy={isMobile ? "30%" : "50%"}
             innerRadius={isMobile ? 80 : isTab ? 130 : 150}
             outerRadius={isMobile ? 110 : isTab ? 180 : 220}
             label={isDesktop ? renderLabel : false}
@@ -138,7 +138,7 @@ const Tokenomics = () => {
 
           <text
             x="50%"
-            y={isMobile ? "40%" : "50%"}
+            y={isMobile ? "30%" : "50%"}
             textAnchor="middle"
             dominantBaseline="middle"
             fill="#fff"
@@ -149,7 +149,7 @@ const Tokenomics = () => {
           </text>
           <text
             x="50%"
-            y={isMobile ? "45%" : "55%"}
+            y={isMobile ? "35%" : "55%"}
             textAnchor="middle"
             dominantBaseline="middle"
             fill="#ccc"
