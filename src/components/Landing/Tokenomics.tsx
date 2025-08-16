@@ -99,6 +99,7 @@ const CustomLabelLine: PieLabelLineType = ({ points, index }) => {
 const Tokenomics = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [isTab, setIsTab] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -106,6 +107,7 @@ const Tokenomics = () => {
 
       setIsMobile(width < 490);
       setIsTab(width >= 490 && width < 1024);
+      setIsDesktop(width >= 1024);
     };
 
     handleResize();
@@ -124,7 +126,7 @@ const Tokenomics = () => {
             cy={isMobile ? "40%" : "50%"}
             innerRadius={isMobile ? 80 : isTab ? 130 : 150}
             outerRadius={isMobile ? 110 : isTab ? 180 : 220}
-            label={window.innerWidth > 1024 ? renderLabel : false}
+            label={isDesktop ? renderLabel : false}
             labelLine={CustomLabelLine}
             paddingAngle={3}
             dataKey="value"
