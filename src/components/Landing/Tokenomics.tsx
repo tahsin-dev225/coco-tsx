@@ -117,7 +117,10 @@ const Tokenomics = () => {
   }, []);
 
   return (
-    <div className="xl:w-[85%] w-[95%] h-[700px] smm:h-[640px] lg:h-[600px] mx-auto">
+    <div
+      id="tokenomics"
+      className="xl:w-[85%] w-[95%] h-[700px] smm:h-[640px] lg:h-[600px] mx-auto"
+    >
       <ResponsiveContainer className={"w-[100%]! h-[65%]! lg:h-full! "}>
         <PieChart>
           <Pie

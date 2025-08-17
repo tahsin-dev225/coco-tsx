@@ -80,7 +80,7 @@ export default function PricingTable() {
         </thead>
         <tbody>
           {rows.map((row, i) => (
-            <tr key={i} className={`${i % 2 === 0 ? "bg-[#EEEAF4]/10" : ""}`}>
+            <tr key={i} className={`${i % 2 === 0 ? "bg-[#EEEAF4]/10" : ""} `}>
               <td className="px-6 text-[20px] xl:text-[24px] text-[#EEEAF4] font-bold  py-4">
                 {row.pool}
               </td>

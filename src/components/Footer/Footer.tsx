@@ -12,10 +12,10 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { name: "About", href: "/about" },
-  { name: "Roadmap", href: "roadmap" },
-  { name: "Tokenomics", href: "/tokenomics" },
-  { name: "FAQ", href: "/faq" },
+  { name: "About", href: "#about" },
+  { name: "Roadmap", href: "#roadmap" },
+  { name: "Tokenomics", href: "#tokenomics" },
+  { name: "FAQ", href: "#faq" },
   { name: "Whitepaper", href: "/whitepaper" },
 ];
 

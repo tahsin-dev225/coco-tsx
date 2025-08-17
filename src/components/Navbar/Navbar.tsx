@@ -13,15 +13,26 @@ type NavItem = {
 };
 
 export const navItems: NavItem[] = [
-  { name: "About", href: "/about" },
-  { name: "Roadmap", href: "roadmap" },
-  { name: "Tokenomics", href: "/tokenomics" },
-  { name: "FAQ", href: "/faq" },
+  { name: "About", href: "#about" },
+  { name: "Roadmap", href: "#roadmap" },
+  { name: "Tokenomics", href: "#tokenomics" },
+  { name: "FAQ", href: "#faq" },
   { name: "Whitepaper", href: "/whitepaper" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const section = document.querySelector(href);
+      section?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const toggleDrawer = (open: boolean) => () => {
     setIsOpen(open);
@@ -45,6 +56,7 @@ const Navbar = () => {
         <div className="md:flex hidden sm:gap- px-1.5 py-1 items-center rounded justify-center">
           {navItems?.map((item) => (
             <Link
+              onClick={(e) => handleScroll(e, item.href)}
               className={`px-3 items-center font-tight lg:text-[14px] xl:text-[16px] font-normal text-[#BEBBC9] py-2.5 h-max  ${
                 item.name === "HOME" && "bg-[#8FEF2F] text-black!"
               } `}

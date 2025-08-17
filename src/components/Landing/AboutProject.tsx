@@ -1,9 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import BluredCircle from "../Ui/BluredCircle";
 
 const AboutProject = () => {
   return (
-    <div className="xl:w-[85%] w-[95%] relative font-tight mx-auto my-14 mt-28">
+    <div
+      id="about"
+      className="xl:w-[85%] w-[95%] relative  font-tight mx-auto my-14 mt-28"
+    >
       {/* LIne Image's */}
       <Image
         src={"/img/line1.png"}
@@ -56,7 +60,7 @@ const AboutProject = () => {
 
       {/* 3 grid view */}
       <div className="grid mx-auto gap-4 md:gap-6 grid-cols-1  lg:grid-cols-3">
-        <div className="p-8 mx-auto rounded-3xl bg-gradient-to-tr from-[#1D1234] to-[#352659]">
+        <div className="p-8 mx-auto hover:-translate-y-2 transition-transform duration-300 rounded-3xl bg-gradient-to-tr from-[#1D1234] to-[#352659]">
           <div className="flex size-14 rounded-xl justify-center  items-center text-[20px] xxl:text-[24px] font-bold bg-[#FB6419]">
             01
           </div>
@@ -69,7 +73,7 @@ const AboutProject = () => {
             options
           </p>
         </div>
-        <div className="p-8 mx-auto rounded-3xl bg-gradient-to-tr from-[#1D1234] to-[#352659]">
+        <div className="p-8 mx-auto hover:-translate-y-2 transition-transform duration-300 rounded-3xl bg-gradient-to-tr from-[#1D1234] to-[#352659]">
           <div className="flex size-14 rounded-xl justify-center  items-center text-[20px] xxl:text-[24px] font-bold bg-[#FB196C]">
             02
           </div>
@@ -81,7 +85,7 @@ const AboutProject = () => {
             rewards, and additional performance insights for better transparency
           </p>
         </div>
-        <div className="p-8 mx-auto w-full rounded-3xl bg-gradient-to-tr from-[#1D1234] to-[#352659]">
+        <div className="p-8 mx-auto hover:-translate-y-2 transition-transform duration-300 w-full rounded-3xl bg-gradient-to-tr from-[#1D1234] to-[#352659]">
           <div className="flex size-14 rounded-xl justify-center  items-center text-[20px] xxl:text-[24px] font-bold bg-[#0FC2FD]">
             03
           </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 // Sans-serif font
 const inter = Inter({
@@ -29,7 +30,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${robotoMono.variable} antialiased`}>
-        {children}
+        <SmoothScroll> {children}</SmoothScroll>
+        {/* {children} */}
       </body>
     </html>
   );

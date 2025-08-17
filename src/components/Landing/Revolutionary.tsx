@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
+import BluredCircle from "../Ui/BluredCircle";
 
 const Revolutionary = () => {
   return (
-    <div className="w-[95%] font-tight my-24 lg:w-[85%] mx-auto">
+    <div className="w-[95%] font-tight my-24 relative overflow-hidden lg:w-[85%] mx-auto">
       <h1 className="md:max-w-[70%] lg:max-w-[50%] font-bold my-5 text-[32px] lg:text-[48px]">
         Revolutionary Technology Behind COCO Meme
       </h1>
@@ -68,6 +69,8 @@ const Revolutionary = () => {
           </div>
         </div>
       </div>
+
+      <BluredCircle classN="top-[7%] left-[35%] size-[300px]" />
     </div>
   );
 };

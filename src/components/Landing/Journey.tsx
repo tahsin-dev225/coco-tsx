@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Ui/Button";
+import BluredCircle from "../Ui/BluredCircle";
 
 type phases = {
   title: string;
@@ -63,7 +64,10 @@ const AllPhase: phases[] = [
 
 const Journey = () => {
   return (
-    <div className="flex my-14 sm:my-32 w-[95%] xl:w-[85%] mx-auto font-tight flex-col lg:flex-row gap-6">
+    <div
+      id="roadmap"
+      className="flex relative overflow-hidden my-14 sm:my-32 w-[95%] xl:w-[85%] mx-auto font-tight flex-col lg:flex-row gap-6"
+    >
       <div className="w-full ">
         <h1 className="font-bold leading-[130%] text-[#EEEAF4] lg:w-[85%] mb-8 text-[32px] xl:text-[48px]">
           The Journey Ahead: Our Roadmap to Limitless Innovation
@@ -78,7 +82,7 @@ const Journey = () => {
         {AllPhase.map((phase, index) => (
           <div
             key={index}
-            className="p-4 md:p-6 mx-auto rounded-4xl bg-gradient-to-tr from-[#1D1234] to-[#352659]"
+            className="p-4 md:p-6 mx-auto hover:-translate-y-2 transition-transform duration-300 rounded-4xl bg-gradient-to-tr  from-[#1D1234] to-[#352659]"
           >
             <h2 className="text-[#FB6419] w-max text-[16px] px-3.5 rounded-xl bg-[#fb641923] py-1.5">
               Phase 0{index}
@@ -93,6 +97,8 @@ const Journey = () => {
           </div>
         ))}
       </div>
+
+      <BluredCircle classN="top-[10%] left-[10%] size-[300px]" />
     </div>
   );
 };

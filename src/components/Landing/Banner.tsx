@@ -1,10 +1,14 @@
 import React from "react";
 import Button from "../Ui/Button";
 import Image from "next/image";
+import BluredCircle from "../Ui/BluredCircle";
 
 const Banner = () => {
   return (
-    <div className="flex lg:min-h-[400px] font-tight xl:min-h-[550px] flex-col lg:flex-row w-[95%] gap-2.5 md:gap-6 xl:w-[85%] mx-auto items-center ">
+    <div
+      id="home"
+      className="flex lg:min-h-[400px] font-tight xl:min-h-[550px] flex-col lg:flex-row w-[95%] gap-2.5 md:gap-6 xl:w-[85%] mx-auto items-center "
+    >
       <div className="w-full lg:min-h-[360px] xl:min-h-[500px] flex flex-col items-start justify-end h-full relative ">
         <h2 className="xl:text-[60px] sm:w-[70%] lg:pt-1 lg:w-[92%] mx-auto lg:mx-0 text-[38px] md:px-3 pt-8 sm:pt-28 p-3 xl:w-[90%] text-center lg:text-start leading-[110%] font-bold font-tight">
           Join COCO Combat and Start Earning Together
@@ -35,7 +39,7 @@ const Banner = () => {
             </h3>
           </div>
         </div>
-        <div className="absolute hidden sm:block lg:right-32 right-10 bottom-8 w-max lg:bottom-10 -rotate-[10deg] lg:-rotate-6 ">
+        <div className="absolute hidden sm:block lg:right-32 xl:right-24 right-10 bottom-8 w-max lg:bottom-10 -rotate-[10deg] lg:-rotate-6 ">
           <div className="relative  flex justify-center items-center w-full px-4 py-3">
             <div className="size-7 absolute rounded-full -bottom-2.5 -right-2.5 bg-[#1DCCF0]"></div>
             <div className="w-full  absolute min-h-10 backdrop-blur h-full rounded-xl bg-[#3f3f794b] px-4 z-20"></div>
